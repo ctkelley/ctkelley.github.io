@@ -1,0 +1,66 @@
+\batchmode
+
+\documentclass[final]{siamltex}
+\usepackage{times,tim,fullpage}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\headsep}{0in}
+\setlength{\headheight}{0in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{0in}
+
+\pagestyle{empty}
+
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\newwrite\lthtmlwrite
+\def\lthtmltypeout#1{{\let\protect\string\immediate\write\lthtmlwrite{#1}}}%
+\newbox\sizebox
+\begin{document}
+\pagestyle{empty}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$F_N$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline738: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$F_N$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline740: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$F_N$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline742: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${F_N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline744: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${F_N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline746: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${F_N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline748: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${F_N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline750: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${F_N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline752: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+
+\end{document}
