@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TITLE>Video from Charlie Berger at ERDC</TITLE>
+<LINK REV="made" HREF="mailto:Tim_Kelley@ncsu.edu">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H3>
+Videos from Charlie Berger at ERDC
+</H3>
+
+These two videos are examples of the way in which the research
+from Kelley's group has been deployed in ERDC's work. Four researchers
+from ERDC 
+Gaurav Savant, Tate O. McAlpin, Charlie Berger, and Jennifer N. Tate,
+have applied Kelley's work on pseudo-transient continuation in their 
+recent paper
+<p>
+<a href="Berger_Paper.pdf">
+A Pseudo-Transient Continuation-Based Finite Element Hydrodynamic Model 
+for Dam and Levee Failure.
+</a>
+
+They use the method to adjust the time-step size in a way to maintain
+time accuracy and take few time steps than a standard error control
+approach. This is an "out-of-the-box" application pseudo-transient 
+continuation, which is designed for rapid integration to steady state as
+opposed to time-accuracy. The authors modify pseudo-transient continuation
+by putting a tight limit on the growth of the time step to preserve
+time-accuracy, while allowing some growth after the initial transient
+in the solution has passed.  The approach in the paper is the first to 
+obtain an efficient and accurate implicit finite element solution of
+dam and levee failures. 
+
+The authors have shared some of the results of their simulations for a
+real location (they can't tell me exactly where it is). They have created
+videos for 
+<a href="Velocity.avi">velocity</a> and 
+<a href="Depth.avi">depth</a> of the wave following a dam failure.
+
+Pseudo-Transient Continuation is now well integrated into ERDC's ADH
+simulator.
+<p>
+
+In an email from May of 2009, Charlie Berger said:
+<p>
+<em>
+Tim,
+
+We've been using Pseudo Transient Continuation (PTC) for time dependent problems with some success.  We are setting a maximum time step size, so that we can get time accuracy.  However we are fixing the number of nonlinear iterations.  We use the initial steady residual to calculate the time step size (this is an indicator of the temporal variation).  If this time step size is above our maximum we just use the max.  So we are getting time accurate solutions (checked by reducing the max) with a model that selects its own time step.  Appears to work really well.
+
+We also found that we had been using the previous steady residual to calcuate the time step.  When we used the current residual our steady-state calculations are much quicker and more stable.
+
+In any case the PTC is helping us out a bunch.  If you need some examples of results for your PR, I'll be glad to send them along.
+
+Thanks,
+Charlie 
+</em>
+
+<p>
+
+References:
+<ul>
+<li><a href="Berger_Paper.pdf"> The paper (pdf)</a>
+<li><a href="Velocity.avi">Velocity Movie (avi)</a>
+<li><a href="Depth.avi">Depth Movie (avi)</a>
+</ul>
+
+
+</body>
+</HTML>
+</plaintext></a><br clear=all>
+</html>

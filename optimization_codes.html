@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<TITLE>Iterative Methods for Optimization: Matlab Codes </TITLE>
+</HEAD>
+<BODY>
+<h3> 
+<a href="http://www.siam.org/books/kelley/fr18/matlabcode.php">
+Iterative Methods for Optimization</a>: Matlab Codes </h3>
+<ul>
+<li> 
+<a href="darts/README"> 
+README </a>:
+Current status. </li>
+<li> Gzipped tar file with everything
+<a href="darts/optimization.tar.gz"> optimization.tar.gz </a>
+<li> Line Search Methods:
+<ul>
+<li> 
+<a href="darts/steep.m"> 
+steep.m </a>: Steepest Descent 
+<li>
+<a href="darts/gaussn.m"> 
+gaussn.m </a>:
+Damped Gauss-Newton 
+<li>
+<a href="darts/bfgswopt.m"> 
+bfgswopt.m </a>: BFGS, low storage 
+<li> Polynomial line search routines:
+<a href="darts/polyline.m"> 
+polyline.m </a>,
+<a href="darts/polymod.m"> 
+polymod.m </a>
+<li> Numerical Derivatives:
+<a href="darts/diffhess.m"> 
+diffhess.m </a>: Difference Hessian, <br>
+requires 
+<a href="darts/dirdero.m"> 
+dirdero.m </a>: directional derivative, as do several other codes
+</ul>
+<li> Trust Region Codes:
+<ul>
+<li>
+<a href="darts/ntrust.m"> 
+ntrust.m </a>: Newton's Method with Simple Dogleg
+<li>
+<a href="darts/levmar.m"> 
+levmar.m </a>: Levenberg-Marquardt for nonlinear least squares
+<li>
+<a href="darts/cgtrust.m"> 
+cgtrust.m </a>: Steihaug CG-dogleg 
+</ul>
+<li> Bound Constrained Problems:
+<ul>
+<li> 
+<a href="darts/gradproj.m"> 
+gradproj.m </a>: Gradient Projection Method
+<li>
+<a href="darts/projbfgs.m"> 
+projbfgs.m</a>: Projected BFGS code
+</ul>
+<li> Noisy Problems:
+<ul>
+<li><a href="darts/imfil.m"> 
+imfil.m </a>: Implicit Filtering (OLD CODE). Please use the 
+<a href="https://ctk.math.ncsu.edu/imfil.html"> NEW CODE </a>
+<li> 
+<a href="darts/nelder.m"> 
+nelder.m </a>: Nelder-Mead
+<li><a href="darts/simpgrad.m"> 
+simpgrad.m </a>:
+Simplex Gradient, used in implicit filtering and Nelder-Mead codes
+<li> <a href="darts/hooke.m">
+hooke.m </a>: Hooke-Jeeves code
+<li> <a href="darts/mds.m">
+mds.m </a>: Multidirectional Search code
+</ul>
+<li> NEW <a href="https://ctk.math.ncsu.edu/imfil.html"> Implicit Filtering
+Code </a> in MATLAB. This replaces the fortran code.
+<li> 
+<a name="iffco">
+Fortran Codes for Noisy Problems
+</a>
+<ul>
+<li> 
+--> UNSUPPORTED <--
+The Gilmore-Choi-Eslinger-Kelley-Patrick-Gablonsky
+<a href="iffco.html">
+FORTRAN code and users' guide </a> for implicit filtering with bound constraints.
+<li> 
+Joerg Gablonsky's
+<a HREF="SOFTWARE/DIRECTv204.tar.gz">
+DIRECTv204.tar.gz </a> FORTRAN code for DIRECT with documentation 
+</ul>
+<li> Dan Finkel's 
+<a href="Finkel_Direct"> Matlab implementation of DIRECT </a>
+</ul>
+<hr>
+<a href="http://www4.ncsu.edu/eos/users/c/ctkelley/www/tim.html">
+<img align = "bottom" src = "gto84.jpg" width=85 alt = "Tim's Home Page"></a>
+
+<a href="http://www4.ncsu.edu/eos/users/m/meyer/www/NAHomePage.html">
+<img src="NA_Home.gif" alt="NA Home Page" height = 40></a>
+
+<a href="http://www2.ncsu.edu/math/CRSC/index.html">
+<img src="crsc.head.gif" alt="CRSC Home Page" height=40> </a>
+
+<a href="http://www2.ncsu.edu/math/">
+<img src="banner.gif" alt="NCSU Math Home Page" height=40> </a>
+
+<a href="http://www.ncsu.edu/index.html">
+<img src="home0.gif" alt="NCSU Home Page"></a>
+
+<HR>
+Last modified: July 23, 1999
+<ADDRESS>
+<script language="JavaScript" type="text/javascript"> <!-- var
+ first = 'ma'; var second = 'il'; var third = 'to:'; var address =
+ '&#116;&#105;&#109;&#95;&#107;&#101;&#108;&#108;&#101;&#121;';
+ var domain =
+ '&#110;&#99;&#115;&#117;&#46;&#101;&#100;&#117;';
+ document.write('<a href="'); document.write(first+second+third);
+ document.write(address); document.write('&#64;');
+ document.write(domain); document.write('" title="Email">');
+ document.write('C. T. Kelley <\/a>'); // --> </script>
+</ADDRESS>
+
+
+</BODY>
+
+</HTML>

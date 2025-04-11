@@ -1,0 +1,198 @@
+<HTML>
+<HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<TITLE>Implicit Filtering in Matlab: Version 1.0</TITLE>
+<LINK REV="made" HREF="mailto:Tim_Kelley@ncsu.edu">
+</HEAD>
+<h1>
+Showtime!
+</h1>
+<h3>
+
+<hr>
+
+
+<a href="http://epubs.siam.org/ebooks/siam/software_environments_and_tools/se23"> New Book </a>
+SIAM, 2011, to go with the new code.
+<br>
+<hr>
+New Code:
+Version 1.0 of imfil.m is done. Thanks for your help, debugging, and
+alpha/beta testing.
+<br>
+
+<hr>
+The implicit filtering project is or has been 
+supported by the NSF, ARO, and USACE.
+
+<br>
+
+
+<hr>
+
+imfil.m: code + manual<br>
+Version 1.0, May 27, 2011
+
+<hr>
+
+<a href="MATLAB_IMFIL_v1/manual.pdf"> Latest documentation in pdf. </a>
+<p>
+<a href="MATLAB_IMFIL_v1/MATLAB_IMFIL_v1.tar.gz"> 
+tar.gz file of the whole works. </a>
+
+<hr>
+
+The codes:
+
+<ul>
+<li> Main codes: You need all of this stuff:
+<ul>
+<li> <a href="MATLAB_IMFIL_v1/imfil.m"> imfil.m </a>
+<li> <a href="MATLAB_IMFIL_v1/imfil_optset.m"> imfil_optset.m </a>
+</ul>
+<li> Tools and examples
+for the advanced options in the Imfil_Tools directory: <br>
+<a href="MATLAB_IMFIL_v1/Imfil_Tools/build_history.m"> 
+build_history.m </a>,
+<a href="MATLAB_IMFIL_v1/Imfil_Tools/lev_mar_exec.m"> 
+lev_mar_exec.m </a>,
+<a href="MATLAB_IMFIL_v1/Imfil_Tools/random_search.m"> 
+random_search.m </a>
+<li> Examples 
+<ul>
+
+<li> Simple Example:
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/driver_easy.m">
+driver_easy.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/driver_easy_p.m">
+driver_easy_p.m	</a>,
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/f_easy.m">
+f_easy.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/f_easy_p.m">
+f_easy_p.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/image_easy.m">
+image_easy.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Simple_Example/parallel_easy.m">
+parallel_easy.m </a>
+
+<li> Linear Constraints:
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/explore_driver.m">
+explore_driver.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/lc_driver.m">
+lc_driver.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/lc_imfil.m">
+lc_imfil.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/lc_obj.m">
+lc_obj.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/linear_constraints.m">
+linear_constraints.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Linear_Constraints/tangent_directions.m">
+tangent_directions.m </a>,
+</ul>
+
+<li> Case studies from the book
+<ul>
+<li> Parameter ID:
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/driver_lm.m">
+ driver_lm.m</a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/driver_parallel_pid.m">
+ driver_parallel_pid.m</a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/ driver_pid.m">
+ driver_pid.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/driver_sa.m">
+ driver_sa.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/driver_term.m">
+ driver_term.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/exact_solution.m">
+ exact_solution.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/history_test.m">
+ history_test.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/parallel_pidlsq.m">
+ parallel_pidlsq.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/pidobj.m"> pidobj.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/sa_parallel_pidlsq.m">
+ sa_parallel_pidlsq.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/sa_serial_pidlsq.m">
+ sa_serial_pidlsq.m </a>,
+</a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/serial_pidlsq.m">
+ serial_pidlsq.m
+</a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_PID/yfunsp.m">
+ yfunsp.m
+</a>
+
+<li> Hydraulic Capture: 
+<ul>
+<li> You will need to install MODFLOW 2000 to get this example
+to work. Get it from
+<a href="http://water.usgs.gov/nrp/gwsoftware/modflow2000/modflow2000.html">
+http://water.usgs.gov/nrp/gwsoftware/modflow2000/modflow2000.html </a>
+<li> Be sure and get the DATA directory in
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/DATA.tar.gz"> DATA.tar.gz</a>!
+<li> The other files are
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/README"> README </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/hcevalp.m"> hcevalp.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/hceval.m"> hceval.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/hc_driver.m"> 
+hc_driver.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/hc_driver_parallel.m"> 
+hc_driver_parallel.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/parallel_test.m"> 
+parallel_test.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_HC/plot_landscape.m"> 
+plot_landscape.m </a>,
+</ul>
+<li> Water Resources:
+<ul>
+<li> You will need randsample.m from the MATLAB statistics toolbox.
+<li> The other files are
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/README"> README </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_Cost.m">
+LRGV_Cost.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_Parallel.m">
+LRGV_Parallel.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_cover.m">
+LRGV_Cover.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_datafile.m">
+LRGV_datafile.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_driver.m">
+LRGV_driver.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/LRGV_figs.m">
+LRGV_figs.m </a>,
+<a href="MATLAB_IMFIL_v1/Examples/Case_Study_Water/plot_landscape.m">
+plot_landscape.m </a>
+</ul>
+</ul>
+</ul>
+
+
+<hr>
+<a href="http://www4.ncsu.edu/eos/users/c/ctkelley/www/tim.html">
+<img align = "bottom" src = "gto84.jpg" height=40 alt = "Tim's Home Page"></a>
+
+<a href="http://www4.ncsu.edu/eos/users/m/meyer/www/NAHomePage.html">
+<img src="NA_Home.gif" alt="NA Home Page" height = 40></a>
+
+<a href="http://www2.ncsu.edu/math/CRSC/index.html">
+<img src="crsc.head.gif" alt="CRSC Home Page" height=40> </a>
+
+<a href="http://www2.ncsu.edu/math/">
+<img src="banner.gif" alt="NCSU Math Home Page" height=40> </a>
+
+<a href="http://www.ncsu.edu/index.html">
+<img src="home0.gif" alt="NCSU Home Page"></a>
+
+<HR>
+Last modified: Feb 24, 2011
+
+<ADDRESS>
+<a href="mailto: tim_kelley@ncsu.edu">
+C. T. Kelley
+</a>,
+Tim_Kelley@ncsu.edu </ADDRESS>
+
+
+</BODY>
+
+</HTML>
